@@ -1,0 +1,118 @@
+			.head
+			{
+				position: -webkit-sticky; /* Safari */
+				position: sticky;
+				text-align: center;
+				top: 0;
+				width: 99%;
+				background-color: #716F75;
+				border: 2px solid #433F3F;
+				border-radius: 25px;
+			}
+			.user{
+			text-align: right;
+			font-family: Courier New; 
+			color: #BCBBBB	
+			}
+			.bas{
+			text-align: left;
+			font-family: Courier New; 
+			color: #BCBBBB
+			}
+			.field{
+				text-align: center;
+				border: 3px solid #ccc;
+			border-radius: 25px;
+			}
+			input[type=text] {
+			width: 50%;
+			padding: 7px 9px;
+			margin: 5px 0;
+			box-sizing: border-box;
+			border: 3px solid #ccc;
+			border-radius: 25px;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			outline: none;
+			}
+			input[type=text]:focus {
+			border: 3px solid #555;
+			}
+			input[type=submit]{
+			background-color: #716F75;
+			border: none;
+			color: white;
+			padding: 8px 16px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+			border: 2px solid #433F3F;
+			border-radius: 25px;
+			}
+			input[type=submit]:hover{
+				color: black;
+			background-color: transparent;
+			text-decoration: underline;
+			}
+			a:link {
+			color: black;
+			background-color: transparent;
+			text-decoration: none;
+			}
+			a:visited {
+			color: white;
+			background-color: transparent;
+			text-decoration: none;
+			}
+			a:hover {
+			color: #8D8989;
+			background-color: transparent;
+			text-decoration: underline;
+			}
+			a:active {
+			color: black;
+			background-color: transparent;
+			text-decoration: underline;
+			}
+		*	{
+			box-sizing: border-box;
+			}
+			.column {
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+			}
+			/* Clearfix (clear floats) */
+			.row::after {
+			content: "";
+			clear: both;
+			display: table;
+			}
+			select {
+			text-align: center;
+			font-size: 15px;
+			border: 3px solid #AEA1A1;
+			-webkit-appearance: none;
+			}
+			select:hover {
+				text-align: center;
+			font-size: 15px;
+			border: 3px solid #ccc;
+			-webkit-appearance: none;
+			}
+			select:after {
+				text-align: center;
+			font-size: 15px;
+			border: 3px solid black;
+			-webkit-appearance: none;
+			}
+			td,th table{
+				font-family: monospace;
+				padding: 4px;
+				background-color: #ccc;
+				border-collapse: collapse;
+				border: 1px solid black;
+				width: 50%;
+				border-radius: 25px;
+				font-family: Courier New;
+			}

@@ -1,0 +1,125 @@
+type="text/css"
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #aabcfe;
+    width: 100%
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aabcfe;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aabcfe;
+}
+
+.tg .left_column {
+    width: 3%
+}
+
+.tg .width_table {
+    width: 8%
+}
+
+.tg .yellow {
+    background-color: yellow
+}
+
+.tg .pink {
+    background-color: pink
+}
+
+.tg .blue {
+    background-color: lightblue
+}
+
+.tg .lightgreen {
+    background-color: lightgreen
+}
+
+.tg .green {
+    background-color: green
+}
+
+div .atomic_weight {
+    vertical-align: top;
+    color: black;
+    text-align: right
+}
+
+div .elem {
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold
+}
+
+div .number {
+    text-align: left;
+    vertical-align: bottom;
+    color: black
+}
+
+.lan {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #aabcfe;
+    width: 100%
+}
+
+.lan td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aabcfe;
+}
+
+.lan th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aabcfe;
+}
+
+.lan .green {
+    background-color: green
+}
+
+div .atomic_weight {
+    vertical-align: top;
+    color: black;
+    text-align: right
+}
+
+div .elem {
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold
+}
+
+div .number {
+    text-align: left;
+    vertical-align: bottom;
+    color: black
+}
+img {
+    border-radius: 80%;
+}

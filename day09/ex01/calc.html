@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js</title>
+</head>
+<body>
+        <div class="calc">
+            <h1></h1>
+            <form action="" id="calc">
+                <input id="first">
+                <select id="op">
+                    <option value="add">+</option>
+                    <option value="min">-</option>
+                    <option value="mul">*</option>
+                    <option value="div">/</option>
+                    <option value="div2">%</option>
+                </select>
+                <input id="second">
+                <input type="submit" id="submit" value="Try me!">
+            </form>
+        </div>
+    </div>
+    <script>
+            var calc;
+            var first;
+            var second;
+            var op;
+            window.onload = function () {
+                calc = document.querySelector("#calc");
+                first = document.querySelector("#first");
+                second = document.querySelector("#second");
+                op = document.querySelector("#op");
+                calc.addEventListener("submit", submit);
+                setInterval("alert('Please, use me...')", 30000)
+            }
+            function checknum(m, n) {
+                return m == parseInt(m, 10) && m >= 0 && n == parseInt(n, 10) && n >= 0;
+            }
+            function submit() {
+                event.preventDefault();
+                var m = Number(first.value);
+                var n = Number(second.value);
+                if (!checknum(first.value, second.value)) {
+                    alert("Error :(");
+                    return false;
+                }
+                switch (op.value) {
+                    case ('add'):
+                        result(m + n);
+                        break;
+                    case ('mul'):
+                        result(m * n);
+                        break;
+                    case ('div'):
+                        (n === 0) ? result("It’s over 9000!") : result(m / n);
+                        break;
+                    case ('div2'):
+                        (n === 0) ? result("It’s over 9000!") : result(m % n);
+                        break;
+                    case ('min'):
+                        result(m - n);
+                        break; 
+                    default:
+                        result("operation not found");
+                        break;
+                }
+            }
+            function result(res) {
+                console.log(res);
+                alert(res);
+            }
+        </script>
+</body>
+</html>

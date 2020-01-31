@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>User Basket</title>
+<META charset="UTF-8">
+<script src="Storage.js"></script>
+<link rel="stylesheet" href="StorageStyle.css">
+</head>
+
+
+<body onload="doShowAll()" bgcolor=grey>
+	<h1 style="font-family: Arial;
+				text-align: center;
+				text-shadow: 2px 1px #BDB8B8;">
+	Shopping Cart</h1>
+	<div class="head">
+	<form action="" method="POST"; name="ShoppingList">
+		<p style="font-family: Courier New">Item:
+		<select type="text" name="name">
+		<option value="Helmet, M">Helmet, M</option>
+		<option value="Helmet, L">Helmet, L</option>
+		<option value="Hoodie, S">Hoodie, S</option>
+		<option value="Hoodie, M">Hoodie, M</option>
+		<option value="Hoodie, L">Hoodie, L</option>
+		<option value="Jersey, S">Jersey, S</option>
+		<option value="Jersey, M">Jersey, M</option>
+		<option value="Jersey, L">Jersey, L</option>
+		</select>
+		<p style="font-family: Courier New">Quantity:<input type="text" style="width:10%" name="data" placeholder="quantity" value=""/p>
+		<p></p>
+		<input type="submit" value="Save"   onclick="SaveItem()"/>
+		<input type=submit value="Update" onclick="ModifyItem()"> 
+		<input type=submit value="Delete" onclick="RemoveItem()">
+
+		</div>
+		<p></p>
+		<div class="head">
+			<h3 style="font-family: Arial;
+			text-align: center;
+			text-shadow: 2px 1px #BDB8B8;">Shopping List</h3>
+			<table align="center" id=list></table>
+				<input type=submit value="Clear" onclick="ClearAll()">
+					<span style="font-family: Courier New">* Delete all items</span>
+			</p>
+		</div>
+	</form>
+</div>
+<p>
+	<link rel="stylesheet" href="StorageStyle.css">
+		   <div class=head>
+	<a href="index.php" style="font-family: Courier New">going back to the Store</a>
+  </div>
+
+</body>
+</html>

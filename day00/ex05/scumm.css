@@ -1,0 +1,199 @@
+html, body {
+    background-color: #505050;
+  }
+      span.head {
+              display: block;
+              width: 1000px;
+              height: 100px;
+              padding: 5px;
+              margin-left: auto;
+              margin-right: auto;            
+              border-radius: 15px;
+              background-color: #909090;
+              box-shadow: 7px 7px 4px rgb(31, 31, 31);
+            }
+      span.leftdesk {
+          display: block;
+          position: absolute; 
+              width: 110px;
+              height: 430px;
+              margin-left: 12%;
+              top: 17%;
+              border-radius: 15px;
+              background-color: #909090;
+              box-shadow: 7px 7px 4px rgb(31, 31, 31);
+            }
+            span.rightdesk {
+          display: block;
+          position: absolute; 
+              width: 110px;
+              height: 430px;
+              margin-left: 79%;
+              top: 17%;
+              border-radius: 15px;
+              background-color: #909090;
+              box-shadow: 7px 7px 4px rgb(31, 31, 31);
+            }
+            span.mainpic {
+              display: block;
+          position: absolute;
+          width: 774px;
+              height: 540px;
+              margin-left: 21.5%;
+              top: 17%;
+              border-radius: 15px;
+              background-color: #909090;
+              box-shadow: 7px 7px 4px rgb(31, 31, 31);   
+            }
+            span.info {
+              display: block;
+          position: absolute;
+          width: 500px;
+              height: 150px;
+              margin-left: 10%;
+              top: 75%;
+              border-radius: 15px;
+              background-color: #98FB98;
+              box-shadow: 7px 7px 4px rgb(31, 31, 31);   
+            }
+      img.dayof42 {
+          position: relative;
+          top: -30%;
+          margin-right: 36%;
+          width: 40%;
+          height: 90%;
+      }
+      .topright {
+          position: relative;
+    top: -100%;
+    right: auto;
+              height: 20%;
+  }
+      .search {
+    right: 200px;
+    width: 21%;
+  
+  }
+      .bottomright {
+      position: relative;
+    top: -45%;
+    right: -98%;
+  }
+      .triangle {
+      position: relative;
+          top: 12%;
+          height: 75px;
+          width: 75px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+  }
+      .hand {
+          position: relative;
+          top: 11.5%;
+          height: 75px;
+          width: 75px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      .eye {
+          position: relative;
+              top: 13.5%;
+              height: 75px;
+              width: 75px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+  }
+      .tools {
+          position: relative;
+              top: 13%;
+              height: 75px;
+              width: 75px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+  }
+      .conversation {
+          position: relative;
+              top: 13%;
+              height: 75px;
+              width: 75px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+  }
+  .book {
+          position: relative;
+              top: 15%;
+              height: 80px;
+              width: 70px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+  }
+      .towel {
+          position: relative;
+              top: 12%;
+              height: 60px;
+              width: 60px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+  }
+      .wall {
+          position: relative;
+              top: 12%;
+              height: 60px;
+              width: 90px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+      }
+      .classroom {
+          position: relative;
+              top: 50%;
+              height: 95%;
+              width: 97%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+      }
+      .big {
+          position: relative;
+          margin-left: 2px;
+          font-family: Times;
+      font-size: 31px;
+      }
+      .shadow {
+          position: relative;
+          text-shadow: 5px 5px 5px #ff0000;
+      }
+      .cursive{
+          position: relative;
+          font-style: italic;
+          margin-left: 2%;
+      }
+      input[type="text"]
+  {
+      position: relative;
+      margin-left: 2%;
+      width: 350px;
+      height: 15px;
+  }
+  .first{
+      position: relative;
+      margin-left: 2%;
+  }
+  .second {
+      position: relative;
+      margin-left: 2%;
+  }#ikea {
+    width:10%;
+    height: 43px;
+    float: right;
+    margin-top: -22%;
+    margin-right: 57%;
+    position: relative;
+  }
+  
+  #apple {
+    width:20%;
+    height: 43px;
+    float: right;
+    margin-top: -22%;
+    margin-right: 0%;
+    position: relative;
+  }  

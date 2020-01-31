@@ -1,0 +1,79 @@
+<html>
+   <head>
+		<meta charset="UTF-8">
+		<title>Modification</title>
+		<style>
+			.head
+			{
+				position: -webkit-sticky; /* Safari */
+  				position: sticky;
+  				top: 0;
+				width: 99%;
+  				background-color: #716F75;
+  				border: 2px solid #433F3F;
+				border-radius: 25px;
+			}
+			input[type=text], input[type=password]{
+			width: 20%;
+			padding: 7px 9px;
+			margin: 5px 0;
+			box-sizing: border-box;
+			border: 3px solid #ccc;
+			border-radius: 25px;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			outline: none;
+			}
+			/* input[type=text]:focus {
+			border: 3px solid #555;
+			} */
+			input[type=submit]{
+			background-color: #716F75;
+			border: none;
+			color: white;
+			padding: 8px 16px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+			border: 2px solid #433F3F;
+			border-radius: 25px;
+			}
+			input[type=submit] :hover{
+				color: black;
+			background-color: transparent;
+			text-decoration: underline;
+			}
+			a:visited {
+			color: white;
+			background-color: transparent;
+			text-decoration: none;
+			}
+			a:hover {
+			color: #8D8989;
+			background-color: transparent;
+			text-decoration: underline;
+			}
+			a:active {
+			color: black;
+			background-color: transparent;
+			text-decoration: underline;
+			}
+		</style>
+	</head>   
+<body bgcolor= grey>
+   <h3 style="font-family: Arial;
+   text-align: center;
+   text-shadow: 2px 1px #BDB8B8;">Change Password</h3>
+    <form name = "modif.php" style="font-family: Courier New" action="modif.php" method="POST">
+       Username: <input type="text" name="login" value=""/>
+    <br />
+    Old password: <input type="password" name="oldpw" value=""/>
+     <br />
+     New password: <input type="password" name="newpw" value=""/>
+     <input type="submit" name="submit" value="OK"/>
+	 </form>
+	 <link rel="stylesheet" href="StorageStyle.css">
+               <div class=head>
+	 <a href="index.html" style="font-family: Courier New">Going Back</a>
+	 </div>
+</body></html>
