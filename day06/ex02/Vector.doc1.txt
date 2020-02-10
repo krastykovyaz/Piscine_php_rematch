@@ -1,0 +1,12 @@
+
+<- Vector ----------------------------------------------------------------------
+A vector is represented by the following characteristics:
+• Its x magnitude 
+• Its y magnitude 
+• Its z magnitude
+The Vector Class provides read only accessors for its four attributes.
+• The Class’ constructor is waiting for an array. The following keys are required:
+’dest’: the vector’s destination vertex, mandatory.
+’orig’: the vector’s origin vertex, optional, by default is worth a new instance of the x=0, y=0, z=0, w=1 vertex
+
+---------------------------------------------------------------------- Vector ->

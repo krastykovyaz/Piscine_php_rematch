@@ -1,0 +1,15 @@
+
+<- Vertex ----------------------------------------------------------------------
+• A new and disturbing "homogeneous coordinates".
+• A color represented by an instance of the Color Class from the previous exercise.
+• The Vertex Class must possess private attributes to represent the five character- istics (see above). You are reminded that by convention, the identifiers of private attributes begin with the ’_’ (underscore) character.
+• The vertex color will always be an instance of the Color Class from the previous exercise.
+• The Vertex Class must provide reading and writing assessors for its five attributes.
+• The Class’ constructor is waiting for an array. The following keys are required:
+’x’: x axis coordinate, mandatory.
+’y’: y axis coordinate, mandatory.
+’z’: z axis coordinate, mandatory.
+’w’: optional, by default is worth 1.0.
+’color’: optional, by default is worth a new instance of the color white.
+• The Vertex Class must have a __toString method.
+---------------------------------------------------------------------- Vertex ->
