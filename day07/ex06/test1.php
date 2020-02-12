@@ -74,3 +74,4 @@ foreach ($actual_fighters as $f) {
 		$f->fight($t);
 	}
 }
+?>

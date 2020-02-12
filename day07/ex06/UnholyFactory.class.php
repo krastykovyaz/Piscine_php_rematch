@@ -1,29 +1,32 @@
 <?php
 class UnholyFactory
 {
-    private $f = 0;
-    public $ars = array();
-    public function absorb($ar)
+    private $a = array();
+    public function absorb($fighter)
     {
-        $this->ars[]=$ar;
-    }
-    public function fight()
-    {
-        foreach ($this->ars as $ar) {
-            if (get_class($ar) == 'Footsoldier' && $this->f == 0)
-            {
-                print("(Factory absorbed a fighter of type foot soldier)");
-                $this->f = 1;
-            }
-            elseif (get_class($ar) == 'Footsoldier' && $this->f == 1)
-                print("(Factory already absorbed a fighter of type foot soldier)");
-            elseif (get_class($ar) == 'Archer')
-                print("(Factory absorbed a fighter of type archer)");
-            elseif (get_class($ar) == 'Assassin')
-                print("(Factory absorbed a fighter of type assassin)");
-            elseif (get_class($ar) == 'Llama')
-            print("(Factory can t absorb this, it s not a fighter)");
+        if (!($fighter instanceof Fighter)) 
+        {
+            echo "(Factory can't absorb this, it's not a fighter)" . PHP_EOL;
+            return false;
         }
+        if (isset($this->a[$fighter->getA()]))
+        {
+            echo "(Factory already absorbed a fighter of type {$fighter->getA()})" . PHP_EOL;
+            return false;
+        }
+        echo "(Factory absorbed a fighter of type {$fighter->getA()})" . PHP_EOL;
+        $this->a[$fighter->getA()] = $fighter;
+        return true;
     } 
+    public function fabricate($name)
+	{
+		if (isset($this->a[$name]))
+		{
+			print("(Factory fabricates a fighter of type ".$name.")".PHP_EOL);
+			return $this->a[$name];
+		}
+		print("(Factory hasn't absorbed any fighter of type ".$name.")". PHP_EOL);
+		return false;
+	}
 }
 ?>
