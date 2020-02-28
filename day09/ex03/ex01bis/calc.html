@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+    <style>
+        #calc{
+			height: 150px;
+			width: 150px;
+			background-color: rgb(150, 150, 150);
+			border-radius: 7px;
+			margin-top: 20%;
+			margin-left: 20%;
+        }
+    </style>
+            <form action="" id="calc">
+                <input type="text" id="first">
+                <select id="op">
+                    <option value="add">+</option>
+                    <option value="min">-</option>
+                    <option value="mul">*</option>
+                    <option value="div">/</option>
+                    <option value="div2">%</option>
+                </select>
+                <input type="text" id="second">
+                <input type="submit" id="submit" value="Try me!">
+            </form>
+        </head>
+<body>
+    <script>
+            var calc;
+            var first;
+            var second;
+            var op;
+            $(document).ready(function(){
+                calc = $('#calc');
+                first = $('#first');
+                second = $('#second');
+                op = $('#op');
+                calc.submit(submit);
+                setInterval("alert('Please, use me...')", 30000)
+            });
+            function checknum(m, n) {
+                return m == parseInt(m, 10) && m >= 0 && n == parseInt(n, 10) && n >= 0;
+            }
+            function submit() {
+                event.preventDefault();
+                var m = Number(first.val());
+                var n = Number(second.val());
+                if (!checknum(first.val(), second.val())) {
+                    alert("Error :(");
+                    return false;
+                }
+                switch (op.val()) {
+                    case ('add'):
+                        result(m + n);
+                        break;
+                    case ('mul'):
+                        result(m * n);
+                        break;
+                    case ('div'):
+                        (n === 0) ? result("It’s over 9000!") : result(m / n);
+                        break;
+                    case ('div2'):
+                        (n === 0) ? result("It’s over 9000!") : result(m % n);
+                        break;
+                    case ('min'):
+                        result(m - n);
+                        break; 
+                    default:
+                        result("operation not found");
+                        break;
+                }
+            }
+            function result(res) {
+                console.log(res);
+                alert(res);
+            }
+        </script>
+</body>
+</html>

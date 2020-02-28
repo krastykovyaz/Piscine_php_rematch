@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> JS </title>
+		<script src="http://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+		<style>
+			#ft_list
+			{
+				width: 200px;
+			}
+			#ft_list div
+			{
+				width: 300px;
+				padding: 10px;
+				background-color: rgba(228, 218, 220, 0.144);
+			}
+            
+        </style>
+        <script src="todo.js"></script>
+    </head>
+	<body onload="getCookies();"> 
+    <input type="submit" value="New" onclick="add_new();"></input>
+	<div id="ft_list"></div>
+	</body>
+</html>
