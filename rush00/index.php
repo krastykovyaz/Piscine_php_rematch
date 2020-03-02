@@ -15,6 +15,8 @@ session_start();
 				width: 100%;
 			}
 		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body onload="doShowAll()"; bgcolor="grey">
 		<h1 style="font-family: Arial;
@@ -41,26 +43,23 @@ session_start();
 		<div class="bas">Basket
 		
 		</div>
-		<div class="user" style="position: absolute;
-top: 18%;
-right: 1%;">
-LogOut</div>
-		<div class="row">
-  <div class="column">
+		<div class="user" style="position: absolute;right: 1%;">LogOut</div>
+		<div class="w3-row-padding">
+  <div class="w3-third">
     <img src="img/helmet.png" style="width:97%">
 	<p style="color: #BCBBBB;">Los Angeles Kings Helmet</p>
 		<p style="font-family: Courier New">Article: 1</p>
 		<p style="font-family: Courier New">Price: 50$</p>
 		
   </div>
-  <div class="column">
+  <div class="w3-third">
     <img src="img/hoodie.png" style="width:80%">
 	<p style="color: #BCBBBB;">Anaheim Ducks Hoodie</p>
 		<p style="font-family: Courier New">Article: 2</p>
 		<p style="font-family: Courier New">Price: 20$</p>
 		
   </div>
-  <div class="column">
+  <div class="w3-third">
     <img src="img/jersey.png" style="width:80%">
 	<p style="color: #BCBBBB;">Vegas Golden Nights Jersey</p>
 		<p style="font-family: Courier New">Article: 3</p>
